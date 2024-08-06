@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+      <form action=""> 
+        <h2>Formulario de Contacto</h2>
+         
+        
+    <fieldset><!--Simple INPUTS-->
+        <legend>INFORMACIÓN BÁSICA</legend>
+        <div class="form_input">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" placeholder="Fabian Rafael Villarroel Rodriguez" required id="nombre">
+        </div>
+        <div class="form_input">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Ejemplo@gmail.com" required id="email">
+        </div>
+        <div class="form_input">
+            <label>Asunto
+                <input type="text" placeholder="El asunto de tu mensaje" required>    
+            </label>
+        </div>
+    </fieldset>
+
+        <!--SELECT & Options-->
+        <div class="form_input">
+            <label for="type">Tipo de Usuario</label>
+            <select name="type-of-user" id="type">
+                <option value="user1">Patreon</option>
+                <option value="user2">Escritor</option>
+                <option value="user3">Dibujante</option>
+            </select>
+        </div>
+        
+        <!--DATALIST & Options-->
+
+        <div class="form_input">
+            <label  for="type">Referente</label>
+            <input list="referente" name="referente">
+            <datalist name="type-of-referent" id="referente">
+                <option value="Wattpad">La pagina donde se publica el libro</option>
+                <option value="Amigo">Un amigo me hablo del libro</option>
+                <option value="Otro">Alguna otro forma</option>
+            </datalist>
+        </div>
+        
+
+        <!--TEATAREA-->
+        <div class="form_input">
+            <label for="msg">Mensaje</label>
+            <textarea  rows="10" maxlength="500" id="msg"placeholder="Deja tu Mensaje..." required></textarea>
+        </div>
+        
+        <!--TERMINOS Y CONDICIONES-->
+        <div class="form_input">
+            <label>Acepto los Terminos y Condiciones
+                <input type="checkbox" class="chec" required>
+            </label>  
+                <input type="submit" class="sub"> 
+        </div>
+</body>
+</html>
